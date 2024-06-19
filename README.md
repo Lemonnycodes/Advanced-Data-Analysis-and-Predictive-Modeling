@@ -1,6 +1,6 @@
 # Advanced Data Mining and Predictive Modeling
 
-This repository contains a collection of assignments focused on advanced data mining and predictive modeling techniques. Each assignment leverages different algorithms and approaches to tackle complex problems in classification, clustering, and predictive analytics. The projects demonstrate skills in feature selection, dealing with imbalanced data, implementing custom algorithms, and optimizing performance metrics.
+This repository contains a collection,focused on advanced data mining and predictive modeling techniques. Each Project leverages different algorithms and approaches to tackle complex problems in classification, clustering, and predictive analytics. The projects demonstrate skills in feature selection, dealing with imbalanced data, implementing custom algorithms, and optimizing performance metrics.
 
 ## Table of Contents
 - [Project 1: Predictive Modeling for Drug Activity](#project-1-predictive-modeling-for-drug-activity)
