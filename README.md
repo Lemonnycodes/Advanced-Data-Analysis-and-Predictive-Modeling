@@ -7,10 +7,6 @@ This repository contains a collection of assignments focused on advanced data mi
 - [Project 2: Ensemble Classifier with Boosting for Drug Activity Prediction](#project-2-ensemble-classifier-with-boosting-for-drug-activity-prediction)
 - [Project 3: K-Means Clustering on Iris Dataset](#project-3-k-means-clustering-on-iris-dataset)
 - [Project 4: K-Means Clustering on Handwritten Digits](#project-4-k-means-clustering-on-handwritten-digits)
-- [Getting Started](#getting-started)
-- [Usage](#usage)
-- [Contributing](#contributing)
-- [License](#license)
 
 ## Project 1: Predictive Modeling for Drug Activity
 
