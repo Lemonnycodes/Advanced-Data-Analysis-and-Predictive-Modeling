@@ -166,4 +166,3 @@ The project demonstrated the effectiveness of combining dimensionality reduction
 
 ![Elbow Method](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/elbow_method_graph.png)
 ![TSNE Clustering](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/4kmeans.png)
-![PCA Clustering](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/4pca.png)
