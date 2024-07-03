@@ -36,52 +36,133 @@ The model achieved an accuracy of 77.6% for 18,000 datasets. Cosine similarity w
 
 
 ## Project 2: Ensemble Classifier with Boosting for Drug Activity Prediction
+Here's the corrected README for the second project without the mention of boosting techniques and ensuring it aligns with your provided details:
+
+Sure, here's the updated README for Project 2 following the same structure as Project 1:
+
+## Project 2: Predictive Modeling for Drug Activity Using Dimensionality Reduction and Classifiers
 
 **Objective:**  
-Implement a custom ensemble classifier using Boosting to improve the prediction of drug activity, thereby enhancing the reliability of identifying potential drug candidates.
+Evaluate the activity of a given drug compound efficiently, given a highly dimensional and imbalanced dataset, to facilitate the drug discovery process.
 
 **Description:**  
-Building on the previous assignment, this project focuses on implementing an ensemble classifier using Boosting techniques, such as AdaBoost. The dataset remains the same, with the task of predicting the activity of compounds. The challenge includes writing custom code for the Boosting algorithm while using libraries for data pre-processing and base classifiers. The F1-score will be used as the performance metric.
+This project focuses on predicting the activity of drug compounds using advanced dimensionality reduction and classification techniques. Given the highly sparse dataset with numerous features, the project emphasizes reducing dimensionality for better performance. Various classifiers were implemented to determine the most effective method for this prediction task.
 
 **Key Techniques:**
-- Feature selection/reduction
+- Feature selection and dimensionality reduction using PCA
 - Handling imbalanced data
-- Implementing custom Boosting algorithms
-- Ensemble learning
+- Binary classification using Naive Bayes and Neural Network algorithms
 - Performance evaluation using F1-score
 
 **Technologies:**  
-Python, scikit-learn (for pre-processing), custom Boosting implementation
+Python, scikit-learn, pandas, NumPy
 
-## Project 3: K-Means Clustering on Iris Dataset
+**Challenges and Techniques:**
+- **Handling Imbalanced Data:**  
+  Managing an imbalanced dataset with a large number of inactive cases was a significant challenge. Specialized techniques were employed to address this issue.
+  
+- **Dimensionality Reduction:**  
+  The dataset's high sparsity and large number of features necessitated immediate dimensionality reduction. PCA (Principal Component Analysis) was used over truncated SVD for its superior results and faster processing time. The dimensions of the testing and training data matrices were reduced from 100,000 to 100 using PCA, capturing 70% of the variance with 500 principal components.
+
+- **Model Selection:**  
+  For evaluating the activity of a given drug, both Neural Network and Naive Bayes classifiers were considered. Naive Bayes was preferred due to its scalability, optimal results, speed, insensitivity to insignificant details, and resistance to overfitting. The dataset's binary format also made it particularly suitable for Naive Bayes.
+
+**Approach:**
+- A sparse matrix with 0 and 1 values was created to determine the activity of the compounds as soon as the data was loaded.
+- The data was initially projected with lesser dimensionality using PCA.
+- The dimensionality of the dataset was reduced from 100,000 to 100 using PCA, as truncated SVD did not yield satisfactory results.
+- A classifier algorithm was then used to predict the activity of the compound.
+
+**Results:**
+- **F1 Scores:**
+  - Naive Bayes: 0.716
+  - Neural Network: 0.53
+
+
+## Project 3: Predictive Modeling for Drug Activity Using Ensemble Models and Boosting
 
 **Objective:**  
-Test and evaluate a custom K-Means algorithm on the Iris dataset to understand the fundamental principles of clustering and benchmark algorithm performance on a classic dataset.
+Enhance the accuracy of predicting the activity of drug compounds using ensemble models and boosting techniques, thereby improving the identification of potential drug candidates.
 
 **Description:**  
-The Iris dataset is a well-known benchmark in data mining and machine learning. This assignment involves implementing the K-Means clustering algorithm from scratch and testing it on the Iris dataset, which includes four features: sepal length, sepal width, petal length, and petal width, across 150 instances. The goal is to assign each instance to one of three clusters and evaluate the clustering performance using the V-measure.
+This project focuses on employing ensemble models and boosting techniques to predict the activity of drug compounds. Given the challenges of handling highly dimensional and imbalanced datasets, the project utilizes various methodologies to optimize prediction accuracy.
 
 **Key Techniques:**
-- Implementing K-Means algorithm
-- Clustering evaluation using V-measure
-- Benchmarking with a known dataset
+- Dimensionality reduction using TruncatedSVD
+- Handling imbalanced data using SMOTE oversampling
+- Implementing ensemble models with different classifiers
+- Boosting with AdaBoost to improve model accuracy
+- Performance evaluation using precision and F1-score
 
 **Technologies:**  
-Python, NumPy
+Python, scikit-learn, pandas, NumPy, AdaBoost
 
-## Project 4: K-Means Clustering on Handwritten Digits
+**Methodology:**
+- A sparse matrix with 0 and 1 values was created to determine the activity of the compounds as soon as the data was loaded.
+- The dimensionality of the dataset was reduced using TruncatedSVD.
+- An ensemble model with three different classifiers (Decision Tree, SVM, KNN, Logistic Regression) was deployed to predict the activity of the compounds.
+- SMOTE oversampling was used to balance the data by creating duplicates in the lesser class.
+- The Decision Tree classifier provided the highest accuracy among the classifiers.
+- Cross-validation was performed to evaluate metrics and determine the F1-score.
+
+**Boosting:**
+- AdaBoost was employed to increase the accuracy of the Decision Tree classifier.
+- The weight was initially set to weight(xi) = 1/n.
+- The class label for the weaker class was predicted and weighted by alpha z.
+- The model was then fit, and the data was split for prediction.
+
+**Results:**
+- **Metrics Derived Using Various Classifiers:**
+  - **KNN:** Precision - 0.67
+  - **Decision Tree:** Precision - 0.83
+  - **Logistic Regression:** Precision - 0.76
+  - Initially, Naive Bayes was used to determine the activity of the compounds and provided decent results. However, using the Decision Tree with boosting resulted in a significant improvement in accuracy.
+
+Here is the updated README for Project 4, incorporating your additional details:
+
+## Project 4: K-Means Clustering on High-Dimensional Data
 
 **Objective:**  
-Implement the K-Means algorithm to cluster 10,000 images of handwritten digits, exploring the application of clustering techniques in high-dimensional image data for pattern recognition.
+Utilize dimensionality reduction and K-Means clustering to efficiently group high-dimensional data, demonstrating the effectiveness of clustering techniques in handling complex datasets.
 
 **Description:**  
-This assignment requires implementing the K-Means clustering algorithm from scratch to cluster a dataset of 10,000 images of handwritten digits (0-9). Each image is represented as a 28x28 pixel matrix, which is flattened into a 1x784 vector. The goal is to assign each instance to one of ten clusters and evaluate the clustering performance using the V-measure. The project highlights the application of K-Means to high-dimensional data and the challenges associated with clustering image data.
+This project focuses on applying dimensionality reduction techniques followed by the K-Means clustering algorithm to group high-dimensional data. The goal is to identify optimal clusters in the dataset, which can reveal underlying patterns and insights.
 
 **Key Techniques:**
-- Implementing K-Means algorithm
-- Clustering high-dimensional data
-- Evaluation using V-measure
-- Handling large datasets
+- Pre-processing and normalization of datasets
+- Dimensionality reduction using PCA, TSNE, and Truncated SVD
+- Clustering using K-Means algorithm
+- Performance evaluation using the Elbow method
 
 **Technologies:**  
-Python, NumPy, scikit-learn (for evaluation)
+Python, scikit-learn, pandas, NumPy, scipy
+
+**Methodology:**
+- **Pre-processing and Normalization:**  
+  The datasets were pre-processed and normalized to ensure consistency and improve the performance of clustering algorithms.
+  
+- **Dimensionality Reduction:**  
+  Principal Component Analysis (PCA), TSNE, and Truncated SVD were used to reduce the dimensionality of the dataset. TSNE was found to be the most effective due to its efficiency in handling larger dimensionality, yielding the best results.
+
+- **K-Means Clustering:**
+  - **Step 1:** Initialize K clusters.
+  - **Step 2:** Assign random centroids.
+  - **Step 3:** Assign each point to the closest centroid.
+  - **Step 4:** Compute the average of centroids.
+  - **Step 5:** Plot graphs to depict optimal solutions.
+
+- For K-Means implementation, random points were taken as the initial centroid points. Distance measures using the scipy library were computed, and centroids were updated with each iteration until the highest accuracy was reached.
+- The output clusters from K-Means were stored as a .txt file.
+- The Elbow method was employed to identify the optimal number of clusters.
+
+**Results:**
+- **Clustering Performance:**  
+  K-Means was computed after reducing the dimensions of the dataset. The clustered data points revealed meaningful groups, and the Elbow method helped determine the optimal number of clusters.
+
+**Conclusion:**
+The project demonstrated the effectiveness of combining dimensionality reduction with K-Means clustering. The reduced dimensions facilitated more efficient clustering, and the use of TSNE provided superior results compared to other methods. Important graphs and visualizations illustrating the clustering results and optimal solutions are included below.
+
+**Graphs and Visualizations:**
+![Elbow Method](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/elbow_method_graph.png)
+![TSNE Clustering](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/4kmeans.png)
+![PCA Clustering](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/4pca.png)
