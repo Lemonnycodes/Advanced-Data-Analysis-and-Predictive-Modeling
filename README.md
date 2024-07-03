@@ -22,9 +22,18 @@ Drugs are small organic molecules that achieve their desired activity by binding
 - Handling imbalanced data
 - Binary classification using various algorithms
 - Performance evaluation using F1-score
+- Cosine similarity determination using the spatial matrix module
+- Data splitting into 70% training and 30% testing sets
+- Evaluation of top k elements from sorted similarity tuples with accuracies ranging from 50% to 80%
 
 **Technologies:**  
 Python, scikit-learn, pandas, NumPy
+
+**Results:**  
+The model achieved an accuracy of 77.6% for 18,000 datasets. Cosine similarity was determined using the spatial matrix module, and the train and test data were split into a 70:30 ratio. The top k elements (k = 3, 20, 50, 72) were selected and returned as tuples, with accuracies ranging from 50% to 80%. Positive and negative reviews/labels were considered, and the majority value from the most similar tuple was assigned to the test vector. The estimated time for determining the accuracy was 1 second per review. The final formatted document with accurate analysis is stored as "format file.csv". A confusion matrix was also determined to evaluate the performance of the KNN classification.
+
+![KNN Confusion Matrix](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/1knn.jpeg)
+
 
 ## Project 2: Ensemble Classifier with Boosting for Drug Activity Prediction
 
