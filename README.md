@@ -163,6 +163,7 @@ Python, scikit-learn, pandas, NumPy, scipy
 The project demonstrated the effectiveness of combining dimensionality reduction with K-Means clustering. The reduced dimensions facilitated more efficient clustering, and the use of TSNE provided superior results compared to other methods. Important graphs and visualizations illustrating the clustering results and optimal solutions are included below.
 
 **Graphs and Visualizations:**
+
 ![Elbow Method](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/elbow_method_graph.png)
 ![TSNE Clustering](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/4kmeans.png)
 ![PCA Clustering](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/4pca.png)
