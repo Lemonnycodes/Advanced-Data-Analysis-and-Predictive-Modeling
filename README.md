@@ -5,9 +5,9 @@ This repository contains a collection focused on advanced data mining and predic
 
 ## Table of Contents
 - [Project 1: Predictive Modeling for Drug Activity](#project-1-predictive-modeling-for-drug-activity)
-- [Project 2: Ensemble Classifier with Boosting for Drug Activity Prediction](#project-2-ensemble-classifier-with-boosting-for-drug-activity-prediction)
-- [Project 3: K-Means Clustering on Iris Dataset](#project-3-k-means-clustering-on-iris-dataset)
-- [Project 4: K-Means Clustering on Handwritten Digits](#project-4-k-means-clustering-on-handwritten-digits)
+- [Project 2: Predictive Modeling for Drug Activity Using Dimensionality Reduction and Classifiers](#project-2-ensemble-classifier-with-boosting-for-drug-activity-prediction)
+- [Project 3: Predictive Modeling for Drug Activity Using Ensemble Models and Boosting ](#project-3-k-means-clustering-on-iris-dataset)
+- [Project 4: K-Means Clustering on High-Dimensional Data](#project-4-k-means-clustering-on-handwritten-digits)
 
 ## Project 1: Predictive Modeling for Drug Activity
 
