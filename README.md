@@ -35,10 +35,7 @@ The model achieved an accuracy of 77.6% for 18,000 datasets. Cosine similarity w
 ![KNN Confusion Matrix](https://github.com/Lemonnycodes/Advanced-Data-Mining-and-Predictive-Modeling/blob/main/1knn.jpeg)
 
 
-## Project 2: Ensemble Classifier with Boosting for Drug Activity Prediction
-Here's the corrected README for the second project without the mention of boosting techniques and ensuring it aligns with your provided details:
 
-Sure, here's the updated README for Project 2 following the same structure as Project 1:
 
 ## Project 2: Predictive Modeling for Drug Activity Using Dimensionality Reduction and Classifiers
 
@@ -118,7 +115,6 @@ Python, scikit-learn, pandas, NumPy, AdaBoost
   - **Logistic Regression:** Precision - 0.76
   - Initially, Naive Bayes was used to determine the activity of the compounds and provided decent results. However, using the Decision Tree with boosting resulted in a significant improvement in accuracy.
 
-Here is the updated README for Project 4, incorporating your additional details:
 
 ## Project 4: K-Means Clustering on High-Dimensional Data
 
@@ -160,6 +156,10 @@ Python, scikit-learn, pandas, NumPy, scipy
   K-Means was computed after reducing the dimensions of the dataset. The clustered data points revealed meaningful groups, and the Elbow method helped determine the optimal number of clusters.
 
 **Conclusion:**
+- **Metrics :**
+- Accuracy for Iris data: 92%
+- Accuracy for Image Clustering 85.4%
+  
 The project demonstrated the effectiveness of combining dimensionality reduction with K-Means clustering. The reduced dimensions facilitated more efficient clustering, and the use of TSNE provided superior results compared to other methods. Important graphs and visualizations illustrating the clustering results and optimal solutions are included below.
 
 **Graphs and Visualizations:**
