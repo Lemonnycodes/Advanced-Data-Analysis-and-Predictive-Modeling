@@ -1,15 +1,15 @@
 
 # Advanced Data Mining and Predictive Modeling
 
-This repository contains a collection focused on advanced data mining and predictive modeling techniques. Each project leverages different algorithms and approaches to tackle complex problems in classification, clustering, and predictive analytics. The projects demonstrate skills in feature selection, dealing with imbalanced data, implementing custom algorithms, and optimizing performance metrics.
+This repository contains a collection focused on advanced data mining and predictive modeling techniques. Each one is about an algorithm and approaches to tackle complex problems in classification, clustering, and predictive analytics. This demonstrate skills in feature selection, dealing with imbalanced data, implementing custom algorithms, and optimizing performance metrics.
 
 ## Table of Contents
-- [Project 1: Predictive Modeling for Drug Activity](#project-1-predictive-modeling-for-drug-activity)
-- [Project 2: Predictive Modeling for Drug Activity Using Dimensionality Reduction and Classifiers](#project-2-ensemble-classifier-with-boosting-for-drug-activity-prediction)
-- [Project 3: Predictive Modeling for Drug Activity Using Ensemble Models and Boosting ](#project-3-k-means-clustering-on-iris-dataset)
-- [Project 4: K-Means Clustering on High-Dimensional Data](#project-4-k-means-clustering-on-handwritten-digits)
+- [ Predictive Modeling for Drug Activity](#project-1-predictive-modeling-for-drug-activity)
+- [Predictive Modeling for Drug Activity Using Dimensionality Reduction and Classifiers](#project-2-ensemble-classifier-with-boosting-for-drug-activity-prediction)
+- [Predictive Modeling for Drug Activity Using Ensemble Models and Boosting ](#project-3-k-means-clustering-on-iris-dataset)
+- [K-Means Clustering on High-Dimensional Data](#project-4-k-means-clustering-on-handwritten-digits)
 
-## Project 1: Predictive Modeling for Drug Activity
+##  Predictive Modeling for Drug Activity
 
 **Objective:**  
 Develop predictive models to determine whether a given compound is active (1) or not (0) based on its molecular features, which is crucial in the initial stages of drug discovery for identifying promising compounds.
@@ -37,7 +37,7 @@ The model achieved an accuracy of 77.6% for 18,000 datasets. Cosine similarity w
 
 
 
-## Project 2: Predictive Modeling for Drug Activity Using Dimensionality Reduction and Classifiers
+## Predictive Modeling for Drug Activity Using Dimensionality Reduction and Classifiers
 
 **Objective:**  
 Evaluate the activity of a given drug compound efficiently, given a highly dimensional and imbalanced dataset, to facilitate the drug discovery process.
@@ -76,7 +76,7 @@ Python, scikit-learn, pandas, NumPy
   - Neural Network: 0.53
 
 
-## Project 3: Predictive Modeling for Drug Activity Using Ensemble Models and Boosting
+## Predictive Modeling for Drug Activity Using Ensemble Models and Boosting
 
 **Objective:**  
 Enhance the accuracy of predicting the activity of drug compounds using ensemble models and boosting techniques, thereby improving the identification of potential drug candidates.
@@ -116,7 +116,7 @@ Python, scikit-learn, pandas, NumPy, AdaBoost
   - Initially, Naive Bayes was used to determine the activity of the compounds and provided decent results. However, using the Decision Tree with boosting resulted in a significant improvement in accuracy.
 
 
-## Project 4: K-Means Clustering on High-Dimensional Data
+##  K-Means Clustering on High-Dimensional Data
 
 **Objective:**  
 Utilize dimensionality reduction and K-Means clustering to efficiently group high-dimensional data, demonstrating the effectiveness of clustering techniques in handling complex datasets.
